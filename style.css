@@ -1,0 +1,95 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+img {
+  max-width: 100%;
+}
+
+body {
+  margin: 10px;
+  background-color: #e8e8e8;
+}
+
+.btn_save {
+  background-color: #228b22;
+  color: #fff;
+  border: none;
+  font-size: 1rem;
+  padding: 0.5rem 0.8rem;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: all 0.2s;
+}
+
+.btn_save:hover {
+  opacity: 0.8;
+}
+
+.container_alert {
+  display: none;
+  position: absolute;
+  right: 35px;
+  bottom: 40px;
+}
+
+.container_alert.success {
+  display: flex;
+}
+
+.save {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 10px 30px;
+  background-color: #fff;
+  box-shadow: 9px 12px 14px -7px rgba(0, 0, 0, 0.62);
+  border-radius: 8px;
+}
+
+.warn {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 10px 30px;
+  background-color: #fff;
+  box-shadow: 9px 12px 14px -7px rgba(0, 0, 0, 0.62);
+  border-radius: 8px;
+}
+
+.progress_bar {
+  display: none;
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  height: 5px;
+  border-radius: 4px;
+  background-color: #007000;
+  animation: progress-animation 3s infinite;
+}
+
+.progress_bar.ativo {
+  display: flex;
+}
+
+@keyframes progress-animation {
+  0% {
+    width: 100%;
+  }
+
+  100% {
+    width: 0%;
+  }
+}
+
+.alert p {
+  font-size: 1rem;
+  color: #007000;
+  font-weight: bold;
+}
